@@ -19,35 +19,35 @@ async def cbstart(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's video chats!**
+😍 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ʜᴇʏ...! ɴᴇɴᴜ ᴍᴇ ʙᴏᴛ ɴɪ 😁 ɴᴇɴᴜ ᴠᴄ ʟᴏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ ᴘʟᴀʏ ᴄʜᴇᴛʜᴀ ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜᴋᴏɴᴅɪ....!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+😘 **ᴍᴇʀɪ ᴄᴏᴍᴍᴀɴᴅs ᴋɪɴᴅʜᴀ ᴄʜᴜᴅᴀᴠᴀᴄʜᴜ sɪᴍᴘʟᴇ ɢᴀ...» 😊 🅲🅾🅼🅼🅰🅽🅳🆂 ᴇ ʙᴜᴛᴛᴏɴ ᴜsᴇ ᴄʜᴇʏᴀɴᴅɪ!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+🤓 **ɴᴇᴋᴜ ᴛᴇʟᴜsᴀ ɴᴀ ʙᴏᴛ ɴɪ ᴇʟᴀ ᴜsᴇ ᴄʜᴇʏᴀʟᴏ ᴛᴇʟɪʏᴀᴘᴏᴛʜᴇ ᴋɪɴᴅʜs ᴇ ʙᴜᴛᴛᴏɴ ᴄʟɪᴄᴋ ᴄʜᴇʏᴀɴᴅɪ» 🙃 🅱🅰🆂🅸🅲 🅶🆄🅸🅳🅴 🅱🆄🆃🆃🅾🅽 ɴɪ ᴜsᴇ ᴄʜᴇsɪ ɴᴀɴᴜ ᴇssᴀʏ ɢᴀ ᴍᴀɴᴀɢᴇ ᴄʜᴇʏᴀɴᴅɪ 😁!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "😉 ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜᴋᴏɴᴅɪ 😁",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("🙃 Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("😊 ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbcmds"),
+                    InlineKeyboardButton("🥰 sᴀɴᴛʜᴏsʜ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "😁 sᴀɴᴛʜᴜ ɴᴇᴛᴡᴏʀᴋ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "😇 sᴀɴᴛʜᴜ Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "😘 Source Code", url="https://t.me/santhuvc"
                     )
                 ],
             ]
@@ -60,7 +60,8 @@ async def cbstart(_, query: CallbackQuery):
 async def cbguides(_, query: CallbackQuery):
     await query.answer("user guide")
     await query.edit_message_text(
-        f"""❓ How to use this Bot ?, read the Guide below !
+        f"""😒 ᴀʀᴇʏ ɴɪʙʙᴀ ᴋɪɴᴅʜᴀ ᴄʜᴜᴅᴜ ᴇʟᴀ ᴜsᴇ ᴄʜᴇʏᴀʟᴏ?, ᴍᴀᴅᴇ ʙʏ: @santhu_music_bot!
+https://te.legra.ph/file/ffbb096d10dd36ad45337.jpg
 
 1.) First, add this bot to your Group.
 2.) Then, promote this bot as administrator on the Group also give all permissions except Anonymous admin.
@@ -70,11 +71,11 @@ async def cbguides(_, query: CallbackQuery):
 
 `- END, EVERYTHING HAS BEEN SETUP -`
 
-📌 If the userbot not joined to video chat, make sure if the video chat already turned on and the userbot in the chat.
+😘 If the userbot not joined to video chat, make sure if the video chat already turned on and the userbot in the chat.
 
-💡 If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}.""",
+😊 If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}.""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("👈 Go Back", callback_data="cbstart")]]
         ),
     )
 
@@ -91,12 +92,12 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("😜 Admin Cmd", callback_data="cbadmin"),
+                    InlineKeyboardButton("🥰 Sudo Cmd", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
+                    InlineKeyboardButton("😊 Basic Cmd", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
+                    InlineKeyboardButton("👈 Go Back", callback_data="cbstart")
                 ],
             ]
         ),
@@ -107,7 +108,7 @@ async def cbcmds(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.answer("basic commands")
     await query.edit_message_text(
-        f"""🏮 here is the basic commands:
+        f"""🛠 here is the basic commands:
 
 » /play (song name/link) - play music on video chat
 » /vplay (video name/link) - play video on video chat
@@ -125,7 +126,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("👈 Go Back", callback_data="cbcmds")]]
         ),
     )
 
@@ -134,7 +135,7 @@ async def cbbasic(_, query: CallbackQuery):
 async def cbadmin(_, query: CallbackQuery):
     await query.answer("admin commands")
     await query.edit_message_text(
-        f"""🏮 here is the admin commands:
+        f"""🛠 here is the admin commands:
 
 » /pause - pause the stream
 » /resume - resume the stream
@@ -149,7 +150,7 @@ async def cbadmin(_, query: CallbackQuery):
 
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("👈 Go Back", callback_data="cbcmds")]]
         ),
     )
 
@@ -157,7 +158,7 @@ async def cbadmin(_, query: CallbackQuery):
 async def cbsudo(_, query: CallbackQuery):
     await query.answer("sudo commands")
     await query.edit_message_text(
-        f"""🏮 here is the sudo commands:
+        f"""🛠 here is the sudo commands:
 
 » /rmw - clean all raw files
 » /rmd - clean all downloaded files
@@ -168,7 +169,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("👈 Go Back", callback_data="cbcmds")]]
         ),
     )
 
