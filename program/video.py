@@ -148,7 +148,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=f"{IMG_1}",
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) | `video`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
+                    caption=f"💡 **Track added to queue »** `{pos}`\n\n"😄 ɴᴀᴍᴇ: [{songname}]({link}) | ᴠɪᴅᴇᴏ\n😇 ᴄʜᴀᴛ: {chat_id}\n🙃 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {requester}'\n😊 ᴠɪᴇᴡs: {views}'\n☹️ ᴅᴜʀᴀᴛɪᴏɴ: {duration}'\n😘 ᴏᴡɴᴇʀ: {@santhu_music_bot}",
                 )
             else:
                 if Q == 720:
@@ -157,7 +157,7 @@ async def vplay(c: Client, m: Message):
                     amaze = MediumQualityVideo()
                 elif Q == 360:
                     amaze = LowQualityVideo()
-                await loser.edit("🔄 **Joining vc...**")
+                await loser.edit("🔄 **ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ ᴠᴄ ᴋɪ ᴄᴏɴɴᴇᴄᴛ ᴀʏɪᴛʜᴀɴᴀ...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioVideoPiped(
@@ -174,7 +174,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=f"{IMG_2}",
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"🗂 **Name:** [{songname}]({link}) | `video`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
+                    caption=f"😄 **ɴᴀᴍᴇ:** [{songname}]({link}) | `ᴠɪᴅᴇᴏ`\n😇 **ᴄʜᴀᴛ:** `{chat_id}`\n🙃 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {requester}'\n😊 **ᴠɪᴇᴡs:** {views}'\n😘 **ᴏᴡɴᴇʀ:** {@santhu_music_bot}", 
                 )
         else:
             if len(m.command) < 2:
@@ -182,13 +182,13 @@ async def vplay(c: Client, m: Message):
                     "» reply to an **video file** or **give something to search.**"
                 )
             else:
-                loser = await c.send_message(chat_id, "🔍 **Searching...**")
+                loser = await c.send_message(chat_id, "🔍 **ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ sᴏɴɢ sᴇᴀʀᴄʜɪɴɢ ᴄʜᴇsᴛᴜɴᴀ 😁...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 Q = 720
                 amaze = HighQualityVideo()
                 if search == 0:
-                    await loser.edit("❌ **no results found.**")
+                    await loser.edit("😏 **no results found.**")
                 else:
                     songname = search[0]
                     title = search[0]
@@ -201,7 +201,7 @@ async def vplay(c: Client, m: Message):
                     image = await thumb(thumbnail, title, userid, ctitle)
                     veez, ytlink = await ytdl(url)
                     if veez == 0:
-                        await loser.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
+                        await loser.edit(f"😒 yt-dl issues detected\n\n» `{ytlink}`")
                     else:
                         if chat_id in QUEUE:
                             pos = add_to_queue(
@@ -217,7 +217,7 @@ async def vplay(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await loser.edit("🔄 **Joining vc...**")
+                                await loser.edit("🔄 **ᴀɢᴜ ʀᴀ ɴɪʙʙᴀ ᴠᴄ ᴄᴏɴɴᴇᴄᴛ ᴀʏɪᴛʜᴜɴᴀ...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioVideoPiped(
@@ -234,7 +234,7 @@ async def vplay(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"😄 **ɴᴀᴍᴇ:** [{songname}]({link}) | `ᴠɪᴅᴇᴏ`\n😇 **ᴄʜᴀᴛ:** `{chat_id}`\n🙃 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {requester}'\n😊 **ᴠɪᴇᴡs:** {views}'\n☹️ **ᴅᴜʀᴀᴛɪᴏɴ:** {duration}'\n😘 **ᴏᴡɴᴇʀ:** {@santhu_music_bot}",
                                 )
                             except Exception as ep:
                                 await loser.delete()
@@ -275,7 +275,7 @@ async def vplay(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                            caption=f"💡 **Track added to queue »** `{pos}`\n\n"😄 ɴᴀᴍᴇ: [{songname}]({link}) | ᴠɪᴅᴇᴏ\n😇 ᴄʜᴀᴛ: {chat_id}\n🙃 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {requester}'\n😊 ᴠɪᴇᴡs: {views}'\n☹️ ᴅᴜʀᴀᴛɪᴏɴ: {duration}'\n😘 ᴏᴡɴᴇʀ: {@santhu_music_bot}",
                         )
                     else:
                         try:
@@ -296,7 +296,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) |`video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"😄 ɴᴀᴍᴇ: [{songname}]({link}) | ᴠɪᴅᴇᴏ\n😇 ᴄʜᴀᴛ: {chat_id}\n🙃 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {requester}'\n😊 ᴠɪᴇᴡs: {views}'\n☹️ ᴅᴜʀᴀᴛɪᴏɴ: {duration}'\n😘 ᴏᴡɴᴇʀ: {@santhu_music_bot}",
                             )
                         except Exception as ep:
                             await loser.delete()
