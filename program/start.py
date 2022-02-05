@@ -19,11 +19,12 @@ async def cbstart(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-😍 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ʜᴇʏ...! ɴᴇɴᴜ ᴍᴇ ʙᴏᴛ ɴɪ 😁 ɴᴇɴᴜ ᴠᴄ ʟᴏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ ᴘʟᴀʏ ᴄʜᴇᴛʜᴀ ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜᴋᴏɴᴅɪ....!**
+😍 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ʜᴇʏ...! ɴᴇɴᴜ ᴍᴇ ʙᴏᴛ ɴɪ 😁 ɴᴇɴᴜ ᴠᴄ ʟᴏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ ᴘʟᴀʏ ᴄʜᴇᴛʜᴀ ɴᴀɴᴜ ᴀᴅᴅ ᴄʜᴇsᴜᴋᴏɴᴅɪ!**
 
 😘 **ᴍᴇʀɪ ᴄᴏᴍᴍᴀɴᴅs ᴋɪɴᴅʜᴀ ᴄʜᴜᴅᴀᴠᴀᴄʜᴜ sɪᴍᴘʟᴇ ɢᴀ...» 😊 🅲🅾🅼🅼🅰🅽🅳🆂 ᴇ ʙᴜᴛᴛᴏɴ ᴜsᴇ ᴄʜᴇʏᴀɴᴅɪ!**
 
-🤓 **ɴᴇᴋᴜ ᴛᴇʟᴜsᴀ ɴᴀ ʙᴏᴛ ɴɪ ᴇʟᴀ ᴜsᴇ ᴄʜᴇʏᴀʟᴏ ᴛᴇʟɪʏᴀᴘᴏᴛʜᴇ ᴋɪɴᴅʜs ᴇ ʙᴜᴛᴛᴏɴ ᴄʟɪᴄᴋ ᴄʜᴇʏᴀɴᴅɪ» 🙃 🅱🅰🆂🅸🅲 🅶🆄🅸🅳🅴 🅱🆄🆃🆃🅾🅽 ɴɪ ᴜsᴇ ᴄʜᴇsɪ ɴᴀɴᴜ ᴇssᴀʏ ɢᴀ ᴍᴀɴᴀɢᴇ ᴄʜᴇʏᴀɴᴅɪ 😁!**""",
+🤓 **ɴᴇᴋᴜ ᴛᴇʟᴜsᴀ ɴᴀ ʙᴏᴛ ɴɪ ᴇʟᴀ ᴜsᴇ ᴄʜᴇʏᴀʟᴏ ᴛᴇʟɪʏᴀᴘᴏᴛʜᴇ ᴋɪɴᴅʜs ᴇ ʙᴜᴛᴛᴏɴ ᴄʟɪᴄᴋ ᴄʜᴇʏᴀɴᴅɪ» 🙃 🅱🅰🆂🅸🅲 🅶🆄🅸🅳🅴 🅱🆄🆃🆃🅾🅽 ɴɪ ᴜsᴇ ᴄʜᴇsɪ ɴᴀɴᴜ ᴇssᴀʏ ɢᴀ ᴍᴀɴᴀɢᴇ ᴄʜᴇʏᴀɴᴅɪ 😁!**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
